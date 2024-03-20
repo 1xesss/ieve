@@ -1,51 +1,44 @@
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
-    <title>IEVE</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="{{ asset('assets/css/landing.css') }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @vite('resources/css/app.css')
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
-    <div class="header">
-        <header>
-            <div class="icons">
-                <ul>
-                   <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i> </a>
-                   <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i></a>
-                   <a href=""><i class="fa-brands fa-x-twitter fa-2xl" style="color: #000000;"></i></a>
-                   <a href=""><i class="fa-brands fa-youtube fa-2xl" style="color: #000000;"></i></a>
-                </ul>
-            </div>
-            <img class="headerimg" src="{{ asset('assets/img/escudoieve.png') }}" alt="">
-            <div class="header-content">
-                <p>Institución Educativa Villa Estadio</p>
-                <nav class="navbar">
-                    <ul>
-                        <li class="text"><a href="">Docentes</a></li>
-                        <li class="text"><a href="">Manual de Convivencia</a></li>
-                        <li class="text"><a href="">Login</a></li>
-                        <li class="text"><a href="">Register</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+
+<header class="w-full bg-black flex flex-col gap-4 ">
+
+<div class="w-full bg-black text-white text-xl flex items-center justify-center gap-4">
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-twitter-x"></i>
+</div>
+
+<nav class="bg-black w-full flex items-center justify-center">
+  <img src="{{ asset('assets/img/escudoieve.png')}}" alt="">
+    <h1></h1>
+</nav>
+
+
+</header>
+
+ <div class="cards">
+    <div class="card1 justify-center" >
+        <img src="{{asset('assets/img/prueba.jpg')}}" alt="">
+        <p></p>
     </div>
-    <footer>
+    <div class="card2">
+        <img src="" alt="">
+        <p></p>
+    </div>
+    <div class="card3">
+        <img src="" alt="">
+        <p></p>
+    </div>
+ </div>
 
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-    </script>
 </body>
-
 </html>
